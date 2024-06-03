@@ -1,0 +1,445 @@
+body{
+  font-family: sans-serif;
+  margin: 0px;
+  padding:  0px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(0,94,168);
+  color: white;
+  /* position: fixed; */
+}
+.logo{
+  width: 100px;
+  height: 50px;
+}
+.contact{
+  width: 40px;
+  height: 40px;
+}
+nav,
+.head-1,
+.head{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.head-1:hover{
+  background-color: white;
+  color: #0d4ea0;
+  padding: 5px;
+  border-radius: 10px;
+}
+.started{
+  background-color: rgb(250, 141, 1);
+  width: 200px;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  font-size: larger;
+}
+.mainImage{
+  width: 500px;
+  margin-top: 100px;
+  animation: tinUpIn 2s ;
+}
+@keyframes tinUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1, 1) translateY(-900%);
+    transform: scale(1, 1) translateY(-900%);
+  }
+
+  50%,
+  70%,
+  90% {
+    opacity: 1;
+    -webkit-transform: scale(1.1, 1.1) translateY(0);
+    transform: scale(1.1, 1.1) translateY(0);
+  }
+
+  60%,
+  80%,
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.image{
+  width: 100%;
+  position: relative;
+}
+.container {
+  position: absolute;
+  left: 674px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(104 135 166 / 81%);
+  font-size: 22px;
+  height: 703px;
+  width: 100%;
+  top: 520px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ico-correct {
+  background-image: url(https://www.alpinehomeair.com/EasyHVAC/images/icon-checked-big.png);
+  width: 41px;
+  height: 38px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  transform: scale(.5);
+}
+.info{
+  list-style: none;
+}
+.vedio{
+  display: flex;
+}
+iframe{
+  height: 300px;
+  width: 1050px;
+  margin-left: 50px;
+  border: 5px solid white;
+}
+.paragraph{
+  color: white;
+  margin-left: 57px;
+}
+.hvac{
+  position: absolute;
+  width: 400px;
+  font-size: larger;
+  padding: 10px;
+  text-align: center;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  animation-name: boingInUp;
+  animation-duration: 1s;
+}
+@keyframes boingInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-90deg);
+    transform: perspective(800px) rotateX(-90deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(50deg);
+    transform: perspective(800px) rotateX(50deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+.img{
+  width: 420px;
+  border: 5px solid white;
+}
+.howitworks{
+  background-color: rgb(239,239,239);
+  width: 100%;
+  height:  800px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 40px;
+  align-items: start;
+  padding: 20px;
+}
+.card{
+  background-color: rgb(245,245,245);
+  width: 380px;
+  height: 300px;
+  padding:  20px;
+  text-align: center;
+}
+.Benefits{
+  position: relative;
+}
+.text{
+  position: absolute;
+  top: 0%;
+  text-align: center;
+  animation:glaucoma  2s ease-in-out;
+}
+@keyframes glaucoma {
+  from {
+    opacity: 1;
+    text-shadow: 0 0 75px black;
+    color: transparent;
+  }
+
+  to {
+    opacity: 1;
+    text-shadow: 0;
+    color: transparent;
+  }
+}
+
+.imag{
+  width: 100%;
+  height: 900px;
+}
+h3{
+  color: white;
+}
+h1{
+  text-align: center;
+  padding: 20px;
+}
+.row{
+  display: flex;
+  background-color: rgb(239,239,239);
+  padding: 65px;
+  border-bottom: 3px solid white;
+}
+
+.step-1{
+  display: inline-block;
+  padding: 7px 8px 10px 0;
+  width: 135px;
+  margin-right: 5px;
+  background: url(https://www.alpinehomeair.com/EasyHVAC/images/step-number.png) no-repeat 0 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'pt serif caption', serif;
+  font-size: 23px;
+  font-style: italic;
+  box-sizing: border-box;
+}
+.back{
+height: 300px;
+border: 3px solid #fff;
+box-shadow: 0 1px 3px rgba(0,0,0,.3);
+width: 650px;
+}
+#image{
+  padding: 20px;
+}
+.number{
+  display: flex;
+  align-items: center;
+}
+.step{
+  padding-right: 100px;
+}
+.down{
+  padding: 10px;
+}
+.down:hover{
+  color: white;
+  background-color: rgb(116, 115, 115);
+  border: 0cm;
+}
+.step-0{
+  padding-left: 80px;
+}
+p {
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+.rows,
+.gather{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+.pic{
+  border: 3px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.requir{
+  position: absolute;
+  left: 40px;
+}
+.requir-1{
+  position: absolute;
+  left: 400px;
+}
+.green{
+  color: rgb(32,106,32);
+  font-weight: bold;
+  font-size: 32px;
+}
+.star-2,
+.star-1,
+.star i{
+  background: url(https://www.alpinehomeair.com/EasyHVAC/images/stars.png) no-repeat;
+  float: left;
+  display: block;
+  height: 33px;
+  background-position: 0 0;
+  width: 100%;
+  margin: auto;
+}
+.center{
+  border: 3px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  padding: 40px;
+}
+.star-1{
+  background: url(https://www.alpinehomeair.com/EasyHVAC/images/stars.png);
+  display: flex;
+}
+.arrow{
+  background-color: rgb(13,78,160);
+  color: white;
+  padding: 30px;
+  border: 5px solid white;
+}
+.arrow:hover{
+  color: rgb(13,78,160);
+  background-color: white;
+}
+.content-cta{
+  background-color: rgb(13,78,160);
+  width: 100%;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.compare{
+position: absolute;
+top: 0px;
+color: white;
+text-align: center;
+left: 475px;
+}
+.relat{
+  position: relative;
+  width: 100%;
+}
+.first{
+  width: 435px;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  float: left;
+  border: 5px solid #0d4ea0;
+  animation: movein 400ms ease-in forwards;
+  position: absolute;
+  top: 150px;
+  left: 280px;
+}
+.second{
+  width: 475px;
+  height: 850px;
+  background-color: white;
+  margin: auto;
+  float: left;
+  border: 5px solid #0d4ea0;
+  animation: movein 400ms ease-in forwards;
+  position: absolute;
+  top: 130px;
+  left: 721px;
+}
+.list{
+  list-style: none;
+  float: left;
+  font-size: 16px;
+  line-height: 29px;
+  color: #767779;
+  border-bottom: 2px solid #909294;
+  padding: 10px 2px 10px 2px;
+}
+.half,
+.sidebar{
+display: flex;
+align-items: flex-start;
+margin-left: 10px;
+gap: 10px;
+}
+.lists{
+  list-style: none;
+}
+.checkmark{
+  width: 25px;
+  height: 25px;
+}
+.half{
+  padding-top: 100px;
+  background-color: rgb(239,239,239);
+}
+strong{
+  height: 700px;
+  width: 3px;
+  background-color: #767779;
+}
+form,
+#contactForm{
+  padding: 50px
+}
+#two{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#messag{
+  width: 100%;
+  height: 100px;
+}
+form{
+  line-height: 100px;
+}
+.submit{
+  background-color: #0d4ea0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all .3s ease;
+  width: 200px;
+  height:  50px;
+  margin-left: 100px;
+}
+footer{
+  background-color: rgb(239,239,239);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.faq{
+width: 70%;
+}
+.social-media{
+  background-color: rgb(13,78,160);
+  width: 97%;
+  display: inline-block;
+  padding-left: 40px;
+  color: white;
+}
+.last-icon{
+  width: 30px;
+  height: 30px;
+}
